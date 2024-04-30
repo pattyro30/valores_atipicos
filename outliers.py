@@ -75,7 +75,7 @@ plt.xlabel('ventas_precios_corrientes')
 plt.ylabel('Frecuencia')
 #plt.show()
 
-#COLUMNA 2: VENTAS_PRECIOS_CONSTANTES
+#column: ventas_precios_constantes
 fig2 = plt.figure(figsize =(7, 3))
 plt.hist(x=df["ventas_precios_constantes"], color='red', rwidth=0.50)
 plt.title('Hist ventas_precios_constantes con outliers')
@@ -140,7 +140,7 @@ plt.ylabel('Frecuencia')
 #plt.show()
 
 
-#COLUMNA : salon_ventas
+# column: salon_ventas
 fig3 = plt.figure(figsize =(7, 3))
 plt.hist(x=df["salon_ventas"], color='red', rwidth=0.50)
 plt.title('Hist salon_ventas con outliers')
@@ -184,7 +184,7 @@ plt.xlabel('salon_ventas')
 plt.ylabel('Frecuencia')
 #plt.show()
 
-#Método con desviación estándar
+#Con desviación estándar
 data_clean_iqr3["salon_ventas"].to_csv('salon_ventas.csv')
 
 y3=df["salon_ventas"]
